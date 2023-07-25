@@ -1,6 +1,8 @@
 venv
 __pycache__
 backup
+other
 .idea
 test
 .vs
+link.txt
