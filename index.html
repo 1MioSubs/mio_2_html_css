@@ -12,6 +12,10 @@
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -166,6 +170,109 @@
       </div>
     </section>
 
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio__top">
+          <h2 class="title portfolio__title">Portfolio</h2>
+          <div class="portfolio__filter-btn">
+            <button class="portfolio__btn" data-filter="all">ALL</button>
+            <button class="portfolio__btn" data-filter=".cat-1">
+              BRANDING
+            </button>
+            <button class="portfolio__btn" data-filter=".cat-2">DESIGN</button>
+            <button class="portfolio__btn" data-filter=".cat-3">
+              PHOTOGRAPHY
+            </button>
+            <button class="portfolio__btn" data-filter=".cat-4">
+              ILLUSTRATION
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__content">
+        <div class="portfolio__item mix cat-1">
+          <img src="images/portfolio/1.jpg" alt="portfolio" />
+          <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+        </div>
+        <div class="portfolio__item mix cat-1">
+          <img src="images/portfolio/2.jpg" alt="portfolio" />
+          <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+        </div>
+        <div class="portfolio__item mix cat-2">
+          <img src="images/portfolio/3.jpg" alt="portfolio" />
+          <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+        </div>
+        <div class="portfolio__item mix cat-2">
+          <img src="images/portfolio/4.jpg" alt="portfolio" />
+          <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+        </div>
+        <div class="portfolio__item mix cat-3">
+          <img src="images/portfolio/5.jpg" alt="portfolio" />
+          <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+        </div>
+        <div class="portfolio__item mix cat-3">
+          <img src="images/portfolio/6.jpg" alt="portfolio" />
+          <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+        </div>
+        <div class="portfolio__item mix cat-2">
+          <img src="images/portfolio/7.jpg" alt="portfolio" />
+          <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+        </div>
+        <div class="portfolio__item mix cat-4">
+          <img src="images/portfolio/8.jpg" alt="portfolio" />
+          <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+        </div>
+        <div class="portfolio__item mix cat-3">
+          <img src="images/portfolio/9.jpg" alt="portfolio" />
+          <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+        </div>
+      </div>
+
+      <a href="#" class="portfolio__add">VIEW MORE PROJECTS</a>
+      <blockquote class="blockquote">
+        «Неважно какую историю вы рассказываете, главное – сделайте своего
+        покупателя героем»
+        <span class="blockquote__author">Крис Броган</span>
+      </blockquote>
+      <div class="portfolio__video">
+        <a
+          href="https://www.youtube.com/watch?v=pPBdhsDpDzc"
+          data-fancybox
+          class="portfolio__video-link"
+        >
+          <img src="images/play.svg" alt="play icon" />
+        </a>
+      </div>
+      <div class="container">
+        <div class="portfolio__numbers">
+          <h5 class="portfolio__numbers-item">
+            305
+            <span>Web Designs</span>
+          </h5>
+          <h5 class="portfolio__numbers-item">
+            220
+            <span>Logo Designs</span>
+          </h5>
+          <h5 class="portfolio__numbers-item">
+            52
+            <span>Print Designs</span>
+          </h5>
+          <h5 class="portfolio__numbers-item">
+            88
+            <span>Mobile Apps</span>
+          </h5>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox]', {
+        // Custom options
+      });    
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
