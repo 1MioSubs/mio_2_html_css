@@ -620,3 +620,13 @@ ul.pricing__item {
   letter-spacing: 1.2px;
   font-family: "Montserrat", sans-serif;
 }
+
+.clients {
+  padding: 70px 0 95px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
