@@ -371,16 +371,16 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 14px; 
+  line-height: 14px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  background-color: #4C4A4A;
+  background-color: #4c4a4a;
   border: 12px solid #666565;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .portfolio__item:hover .portfolio__item-link {
@@ -458,4 +458,72 @@ body {
   font-weight: 400;
   line-height: normal;
   display: block;
+}
+
+.slider-blog {
+  background-color: #f8f6fa;
+  padding: 115px 0;
+}
+
+.slider-blog__item {
+  padding: 190px 0;
+}
+
+.slider-blog__item-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  color: #242121;
+  margin-bottom: 10px;
+  max-width: 675px;
+  display: inline-block;
+}
+
+.slider-blog__item-text {
+  max-width: 585px;
+}
+
+.slick-dots {
+  display: flex;
+}
+
+.slick-dots li + li {
+  margin-left: 13px;
+}
+
+.slick-dots .slick-active button {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-2px);
+}
+
+.slick-dots button {
+  background-color: #242121;
+  opacity: 0.4;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  font-size: 0;
+  padding: 0;
+  border: none;
+}
+
+.slick-prev,
+.slick-next {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-150%);
+}
+
+.slick-prev {
+  left: -95px;
+}
+
+.slick-next {
+  right: -95px;
 }
