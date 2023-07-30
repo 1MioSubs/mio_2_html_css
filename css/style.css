@@ -662,7 +662,7 @@ ul.pricing__item {
 .form input::placeholder,
 .form textarea::placeholder {
   color: #b8b8b8;
-  line-height: 20px; 
+  line-height: 20px;
   font-size: 12px;
   letter-spacing: 3.709px;
 }
@@ -686,4 +686,61 @@ ul.pricing__item {
   letter-spacing: 2px;
 }
 
+.footer__top {
+  padding: 110px 10px 60px;
+  background-color: #333;
+  text-align: center;
+}
 
+.footer__logo {
+  display: inline-block;
+  padding: 0 35px 4px;
+  border-bottom: 2px solid #fcbb08;
+  margin-bottom: 70px;
+}
+
+ul.footer__social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+
+.footer_social-list {
+  padding: 0 15px;
+}
+
+.footer__social-link {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+
+.footer__contact {
+  font-size: 14px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 60px; 
+}
+
+.footer__contact a {
+  display: block;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.go-top {
+  display: inline-block;
+}
+
+.footer__copy {
+  padding: 40px 10px;
+  background: #2A2C2B;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ccc;
+}
