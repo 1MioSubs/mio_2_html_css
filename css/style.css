@@ -103,6 +103,10 @@ body {
   align-items: flex-end;
 }
 
+.mune__btn {
+  display: none;
+}
+
 .menu__list {
   display: flex;
 }
@@ -723,7 +727,7 @@ ul.footer__social {
   font-size: 14px;
   line-height: 32px;
   color: #fff;
-  margin-bottom: 60px; 
+  margin-bottom: 60px;
 }
 
 .footer__contact a {
@@ -738,9 +742,72 @@ ul.footer__social {
 
 .footer__copy {
   padding: 40px 10px;
-  background: #2A2C2B;
+  background: #2a2c2b;
   text-align: center;
   font-size: 12px;
   line-height: 16px;
   color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .menu__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    background-color: #000;
+    display: block;
+    text-align: center;
+    transform: translateY(-200%);
+    transition: all 0.5s;
+  }
+  ul.menu__list {
+    padding: 90px 0 15px;
+  }
+  .menu__list-item + .menu__list-item {
+    margin: 0;
+  }
+  .menu__list-link {
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+  }
+  .logo {
+    position: relative;
+    z-index: 2;
+  }
+  .mune__btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+  }
+  .header__top-inner path,
+  .header__top-inner rect {
+    transition: all 0.5s;
+  }
+  .header__top-inner.header__top-inner--active .menu__list {
+    transform: translateY(0);
+  }
+  .header__top-inner.header__top-inner--active path {
+    fill: #fff;
+  }
+  .header__top-inner.header__top-inner--active rect {
+    fill: #fff;
+  }
+  .header__top-inner {
+    align-items: center;
+  }
+  .header__title {
+    font-size: 50px;
+    line-height: 65px;
+    margin-bottom: 10px;
+  }
+  .header__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
