@@ -1,5 +1,11 @@
 $(function () {
- 
+  $(".menu a, .go-top, .logo, .footer__logo").on("click", function (event) {
+    event.preventDefault();
+    var id = $(this).attr("href"),
+      top = $(id).offset().top;
+    $("body,html").animate({ scrollTop: top }, 1500);
+  });
+
   $(".slider-blog__inner").slick({
     dots: true,
     prevArrow:
@@ -10,24 +16,18 @@ $(function () {
       {
         breakpoint: 769,
         settings: {
-          arrows: false
+          arrows: false,
         },
-      }
+      },
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
     ],
   });
 
-  $(".mune__btn").on('click', function() {
+  $(".mune__btn, .menu a").on("click", function () {
     $(".header__top-inner").toggleClass("header__top-inner--active");
-  })
+  });
 
-
-
-
-
-
-  
   var mixer = mixitup(".portfolio__content");
 });
