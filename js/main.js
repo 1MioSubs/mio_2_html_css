@@ -6,6 +6,17 @@ $(function () {
       '<button type="button" class="slick-prev"><img src="images/arrow-left.svg" alt="arrow-left"></button>',
     nextArrow:
       '<button type="button" class="slick-next"><img src="images/arrow-right.svg" alt="arrow-right"></button>',
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false
+        },
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
   });
 
   $(".mune__btn").on('click', function() {
